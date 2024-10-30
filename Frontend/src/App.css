@@ -1,0 +1,33 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 300px; /* Tamaño máximo estándar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.product-card img {
+  height: 200px; /* Tamaño uniforme para las imágenes */
+  object-fit: cover;
+}
+
+.product-card .content {
+  flex-grow: 1;
+  padding: 16px;
+}
+
+.product-card .description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limita a 3 líneas */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.product-card .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
